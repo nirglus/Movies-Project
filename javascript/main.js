@@ -14,14 +14,22 @@ function fetchPopular(page=1){
       const moviesArr = data.results;
       moviesArr.forEach((element, index) => {
         topMovies.innerHTML += `<div id="mov-${index}">
-        <img src="https://api.themoviedb.org/3/movie/${element.id}/images">
+
         <h1>${element.original_title}</h1>
         <p>Released on ${element.release_date}</p>
         <p>${element.vote_average}</p>`
+  //      <img src="https://api.themoviedb.org/3/movie/${element.id}/images">
       });
     })
     .catch(err => console.error(err));
-
-  
 }
 fetchPopular(); 
+let currentPage = 1;
+document.getElementById("clickRight").addEventListener("click", () =>{
+  document.getElementById("popMovCard").innerHTML = '';
+  fetchPopular(++currentPage);
+})
+document.getElementById("clickLeft").addEventListener("click", () =>{
+  document.getElementById("popMovCard").innerHTML = '';
+  fetchPopular(--currentPage);
+})
