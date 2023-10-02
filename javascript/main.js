@@ -22,7 +22,7 @@ function fetchPopular(page=1){
     })
     .catch(err => console.error(err));
 }
-fetchPopular(); 
+// Next and Previous buttons
 let currentPage = 1;
 document.getElementById("clickRight").addEventListener("click", () =>{
   document.getElementById("popMovCard").innerHTML = '';
@@ -32,6 +32,18 @@ document.getElementById("clickLeft").addEventListener("click", () =>{
   document.getElementById("popMovCard").innerHTML = '';
   fetchPopular(--currentPage);
 })
+// Day or Week select
+const selectElement = document.getElementById("weekOrDay");
+selectElement.addEventListener("change", function() {
+    const selectedValue = selectElement.value;
+    if (selectedValue == "week"){
+      document.getElementById("popMovCard").innerHTML = '';
+      fetchPopular(8);
+    } else if(selectedValue == "day"){
+      document.getElementById("popMovCard").innerHTML = '';
+      fetchPopular(9)
+    }
+});
 
 function singleMovFetch(){
   fetch(`https://api.themoviedb.org/3/movie/popular?language=en-US&page=1&api_key=38aa22b0b8ec6f9efab4ea43ec7c4adc`)
