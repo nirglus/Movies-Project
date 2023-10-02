@@ -14,11 +14,10 @@ function fetchPopular(page=1){
       const moviesArr = data.results;
       moviesArr.forEach((element, index) => {
         topMovies.innerHTML += `<div id="mov-${index}">
-
+        <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}">
         <h1>${element.original_title}</h1>
         <p>Released on ${element.release_date}</p>
         <p>${element.vote_average}</p>`
-  //      <img src="https://api.themoviedb.org/3/movie/${element.id}/images">
       });
     })
     .catch(err => console.error(err));
@@ -33,3 +32,15 @@ document.getElementById("clickLeft").addEventListener("click", () =>{
   document.getElementById("popMovCard").innerHTML = '';
   fetchPopular(--currentPage);
 })
+
+function singleMovFetch(){
+  fetch(`https://api.themoviedb.org/3/movie/popular?language=en-US&page=1&api_key=38aa22b0b8ec6f9efab4ea43ec7c4adc`)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+    const singleMovies = document.getElementById("singleMov");
+    singleMovies.innerHTML = data.results;
+
+  })
+  .catch(err => console.error(err));
+}
