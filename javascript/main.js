@@ -25,12 +25,16 @@ function fetchPopular(page=1){
 // Next and Previous buttons
 let currentPage = 1;
 document.getElementById("clickRight").addEventListener("click", () =>{
-  document.getElementById("popMovCard").innerHTML = '';
-  fetchPopular(++currentPage);
+  if(currentPage < 6){
+    document.getElementById("popMovCard").innerHTML = '';
+    fetchPopular(++currentPage);
+  }
 })
 document.getElementById("clickLeft").addEventListener("click", () =>{
-  document.getElementById("popMovCard").innerHTML = '';
-  fetchPopular(--currentPage);
+  if(currentPage > 1){
+    document.getElementById("popMovCard").innerHTML = '';
+    fetchPopular(--currentPage);
+  }
 })
 // Day or Week select
 const selectElement = document.getElementById("weekOrDay");
