@@ -13,7 +13,7 @@ function singleMovFetch(id){
       .then(data => {
         console.log(data)
         const singleMovie = document.getElementById("singleMov");
-        singleMovie.innerHTML = `<img src="https://image.tmdb.org/t/p/w500/${data.poster_path}>
+        singleMovie.innerHTML = `<img src="https://image.tmdb.org/t/p/w500/${data.poster_path}">
         <h1>${data.original_title}</h1>
         <div class="mov-details">
         <p><strong>Release Date:</strong> ${data.release_date}</p>
