@@ -22,15 +22,14 @@ function singleMovFetch(){
         <p id="mov-about"><strong>Description:</strong> ${data.overview}</p>
         <p><strong>Actors:</strong> <span id="actorsSpan"></span></p>
         </div>
-
         `;
       })
       .catch(err => console.error(err));
 
       fetch(`https://api.themoviedb.org/3/movie/${movID}/credits?language=en-US`, options)
       .then(res => res.json())
-      .then(res => {
-        const ACTORS_ARR = res.cast;
+      .then(data => {
+        const ACTORS_ARR = data.cast;
         const actorSpan = document.getElementById("actorsSpan"); 
         let actorNames = ""
         ACTORS_ARR.forEach((element, index) =>{
@@ -43,4 +42,5 @@ function singleMovFetch(){
       })
       .catch(error => console.error(error));
     }
-  singleMovFetch(980489);
+
+document.getElementById("searchIdBtn").addEventListener("click",singleMovFetch)
