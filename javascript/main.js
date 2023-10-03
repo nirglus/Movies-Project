@@ -43,14 +43,3 @@ selectElement.addEventListener("change", function() {
     }
 });
 
-function singleMovFetch(){
-  fetch(`https://api.themoviedb.org/3/movie/popular?language=en-US&page=1&api_key=38aa22b0b8ec6f9efab4ea43ec7c4adc`)
-  .then(response => response.json())
-  .then(data => {
-    console.log(data)
-    const singleMovies = document.getElementById("singleMov");
-    singleMovies.innerHTML = data.results;
-    
-  })
-  .catch(err => console.error(err));
-}
