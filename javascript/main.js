@@ -50,7 +50,7 @@ function singleMovFetch(){
     console.log(data)
     const singleMovies = document.getElementById("singleMov");
     singleMovies.innerHTML = data.results;
-
+    
   })
   .catch(err => console.error(err));
 }
