@@ -1,5 +1,6 @@
 // Single movie fetch
-function singleMovFetch(id){
+function singleMovFetch(){
+    const movID = document.getElementById("searchIdInput").value;
     const options = {
       method: 'GET',
       headers: {
@@ -8,7 +9,7 @@ function singleMovFetch(id){
       }
     };
     
-    fetch(`https://api.themoviedb.org/3/movie/${id}?language=en-US`, options)
+    fetch(`https://api.themoviedb.org/3/movie/${movID}?language=en-US`, options)
       .then(response => response.json())
       .then(data => {
         console.log(data)
@@ -19,10 +20,27 @@ function singleMovFetch(id){
         <p><strong>Release Date:</strong> ${data.release_date}</p>
         <p><strong>Genre:</strong> ${data.genres[0].name}, ${data.genres[1].name}</p>
         <p id="mov-about"><strong>Description:</strong> ${data.overview}</p>
+        <p><strong>Actors:</strong> <span id="actorsSpan"></span></p>
         </div>
-  
+
         `;
       })
       .catch(err => console.error(err));
+
+      fetch(`https://api.themoviedb.org/3/movie/${movID}/credits?language=en-US`, options)
+      .then(res => res.json())
+      .then(res => {
+        const ACTORS_ARR = res.cast;
+        const actorSpan = document.getElementById("actorsSpan"); 
+        let actorNames = ""
+        ACTORS_ARR.forEach((element, index) =>{
+            actorNames += element.name
+            if (index < ACTORS_ARR.length - 1) {
+                actorNames += ", ";
+            }
+        })
+        actorSpan.innerHTML += actorNames;
+      })
+      .catch(error => console.error(error));
     }
   singleMovFetch(980489);
