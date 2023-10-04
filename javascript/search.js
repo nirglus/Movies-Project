@@ -22,8 +22,8 @@ function searchByName(pageNum=1){
               <div class="card-body">
               <h5 class="card-title">${element.original_title}</h5>
               <p class="card-text">Released on ${element.release_date}</p>
-              <p class="card-text">${element.vote_average}</p>
-              <button id="like-${index}-${pageNum}">Add to favorite</button>
+              <p class="card-text"><i class="bi bi-star-fill"></i> ${element.vote_average}</p>
+              <button id="like-${index}-${pageNum}"><i class="bi bi-heart"></i> Add to favorite</button>
               </div>
               </div>
               </div>`

@@ -17,3 +17,13 @@ nav{
 .navbar-dark .navbar-nav .nav-link:hover{
     color: rgb(134, 176, 212);
 }
+section{
+    gap:2vh;
+    padding: 3vh 0; 
+}
+.bi-star-fill{
+    color: #ff9800;
+}
+.selectDiv{
+    gap: 1vw;
+}
