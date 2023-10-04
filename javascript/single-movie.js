@@ -22,6 +22,7 @@ function singleMovFetch(){
         <p id="mov-about"><strong>Description:</strong> ${data.overview}</p>
         <p><strong>Actors:</strong> <span id="actorsSpan"></span></p>
         </div>
+        <button id="like-${movID}">Add to favorite</button>
         `;
       })
       .catch(err => console.error(err));
