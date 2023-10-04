@@ -20,6 +20,9 @@ function fetchPopular(page=1){
         </div>
         </div>`
       });
+      if(page < 6){
+        document.getElementById("pageNumber").innerHTML = `${page}`
+      }
     })
     .catch(err => console.error(err));
 }
@@ -46,7 +49,7 @@ selectElement.addEventListener("change", function() {
       fetchPopular(8);
     } else if(selectedValue == "day"){
       document.getElementById("popMovCard").innerHTML = '';
-      fetchPopular(9)
+      fetchPopular(9);
     }
 });
 

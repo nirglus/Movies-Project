@@ -24,6 +24,7 @@ section{
 .bi-star-fill{
     color: #ff9800;
 }
-.selectDiv{
+.selectDiv, .leftRightBtns{
     gap: 1vw;
 }
+
