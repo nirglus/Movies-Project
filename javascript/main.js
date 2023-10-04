@@ -10,11 +10,11 @@ function fetchPopular(page=1){
         topMovies.innerHTML += `
         <div class="col-md-3 mb-4">
         <div class="movieCard" id="mov-${index}">
-        <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}">
+        <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" class="card-img-top">
         <div class="card-body">
-        <h2>${element.original_title}</h2>
-        <p>Released on ${element.release_date}</p>
-        <p>${element.vote_average}</p>
+        <h5 class="card-title">${element.original_title}</h5>
+        <p class="card-text">Released on ${element.release_date}</p>
+        <p class="card-text">${element.vote_average}</p>
         <button id="like-${index}-${page}">Add to favorite</button>
         </div>
         </div>
