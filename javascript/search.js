@@ -1,5 +1,5 @@
 // Search by name fetch
-function searchByName(){
+function searchByName(pageNum=1){
     const movName = document.getElementById("searchNameInput").value;
     const options = {
         method: 'GET',
@@ -9,7 +9,7 @@ function searchByName(){
         }
       };
       
-      fetch(`https://api.themoviedb.org/3/search/movie?query=${movName}&include_adult=false&language=en-US&page=1`, options)
+      fetch(`https://api.themoviedb.org/3/search/movie?query=${movName}&include_adult=false&language=en-US&page=${pageNum}`, options)
         .then(response => response.json())
         .then(data => {
             const movieNames = document.getElementById("movieNames");
@@ -24,4 +24,19 @@ function searchByName(){
         } )
         .catch(err => console.error(err));
 }
-document.getElementById("searchNameBtn").addEventListener("click", searchByName);
+document.getElementById("searchNameBtn").addEventListener("click", () =>{
+    searchByName();
+});
+let currentPage = 1;
+document.getElementById("clickRight").addEventListener("click", () =>{
+    if(currentPage < 6){
+        document.getElementById("movieNames").innerHTML = '';
+        searchByName(++currentPage);
+    }
+})
+document.getElementById("clickLeft").addEventListener("click", () =>{
+    if(currentPage > 1){
+        document.getElementById("movieNames").innerHTML = '';
+        searchByName(--currentPage);
+    }
+})
