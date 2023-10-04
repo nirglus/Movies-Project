@@ -15,12 +15,18 @@ function searchByName(pageNum=1){
             const movieNames = document.getElementById("movieNames");
             const moviesArr = data.results;
             moviesArr.forEach((element, index) => {
-              movieNames.innerHTML += `<div id="mov-${index}">
-              <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}">
-              <h1>${element.original_title}</h1>
-              <p>Released on ${element.release_date}</p>
-              <p>${element.vote_average}</p>
-              <button id="like-${index}-${pageNum}">Add to favorite</button>`
+              movieNames.innerHTML += `
+              <div class="col-md-3 mb-4">
+              <div class="movieCard" id="mov-${index}">
+              <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" class="card-img-top">
+              <div class="card-body">
+              <h5 class="card-title">${element.original_title}</h5>
+              <p class="card-text">Released on ${element.release_date}</p>
+              <p class="card-text">${element.vote_average}</p>
+              <button id="like-${index}-${pageNum}">Add to favorite</button>
+              </div>
+              </div>
+              </div>`
             });
         } )
         .catch(err => console.error(err));
