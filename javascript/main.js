@@ -11,7 +11,8 @@ function fetchPopular(page=1){
         <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}">
         <h1>${element.original_title}</h1>
         <p>Released on ${element.release_date}</p>
-        <p>${element.vote_average}</p>`
+        <p>${element.vote_average}</p>
+        <button id="like-${index}-${page}">Add to favorite</button>`
       });
     })
     .catch(err => console.error(err));
