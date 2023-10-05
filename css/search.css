@@ -29,3 +29,23 @@ header{
 #searchNameBtn:active{
     transform: translateY(2px);
 }
+#searchNameInput{
+    border: 0;
+    border-radius: 4px;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(255 255 255 / 46%);
+    margin-right: 1vw;
+    transition: border 0.3s;
+}
+#searchNameInput:hover{
+    border: 1px solid #bc2c83;
+}
+#searchNameInput:focus{
+    outline: none;
+    border: 1px solid #bc2c83;
+}
+::placeholder{
+    color: #000000;
+    padding-left: 10px;
+}
