@@ -51,5 +51,9 @@ section{
 .rounded-circle{
     border: 0;
 }
+.p-link:hover{
+    color: rgb(134, 176, 212) !important;
+    text-decoration: none !important;
+}
 
 
