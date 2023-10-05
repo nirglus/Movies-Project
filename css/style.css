@@ -5,6 +5,8 @@ header{
     height: 100vh;
     background: url(../assets/images/peakpx.jpg) no-repeat center center fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 nav{
     background-color: rgba(255, 255, 255, 0);
