@@ -33,7 +33,9 @@ function searchByName(pageNum=1){
         .catch(err => console.error(err));
 }
 document.getElementById("searchNameBtn").addEventListener("click", () =>{
+    document.getElementById("movieNames").innerHTML = '';
     searchByName();
+    document.getElementById("card-sec").classList.remove("hidden");
 });
 let currentPage = 1;
 document.getElementById("clickRight").addEventListener("click", () =>{

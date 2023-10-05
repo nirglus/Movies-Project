@@ -39,5 +39,8 @@ section{
     color: rgb(134, 176, 212) !important;
     text-decoration: none !important;
 }
+.hidden{
+    display: none !important;
+}
 
 
