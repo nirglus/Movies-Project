@@ -1,13 +1,6 @@
 body{
     font-family: 'Asap Condensed', sans-serif;
 }
-header{
-    height: 100vh;
-    background: url(../assets/images/peakpx.jpg) no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
 nav{
     background-color: rgba(255, 255, 255, 0);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2) ;
@@ -24,24 +17,12 @@ nav{
     font-size: 1.9em;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
-.header-txt{
-    color: #fff;
-    align-self: center;
-    text-align: center;
-    position: absolute;
-    top: 47vh;
-    left: 2vw;
-    text-shadow: 4px 3px 0 #2d366a;
-}
 section{
     gap:2vh;
     padding: 3vh 0; 
 }
 .bi-star-fill{
     color: #ff9800;
-}
-.selectDiv, .leftRightBtns{
-    gap: 1vw;
 }
 .logo{
     font-family: 'Satisfy', cursive;
