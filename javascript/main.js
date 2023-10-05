@@ -26,6 +26,7 @@ function fetchPopular(page=1){
     })
     .catch(err => console.error(err));
 }
+fetchPopular();
 // Next and Previous buttons
 let currentPage = 1;
 document.getElementById("clickRight").addEventListener("click", () =>{

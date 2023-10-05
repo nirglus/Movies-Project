@@ -17,6 +17,11 @@ nav{
 .navbar-dark .navbar-nav .nav-link:hover{
     color: rgb(134, 176, 212);
 }
+.navbar-brand{
+    font-family: 'Satisfy', cursive;
+    font-size: 1.9em;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
 section{
     gap:2vh;
     padding: 3vh 0; 
@@ -27,4 +32,10 @@ section{
 .selectDiv, .leftRightBtns{
     gap: 1vw;
 }
+.logo{
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5em;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 17px, #FF2D95 0px 0px 7px;
+}
+
 
