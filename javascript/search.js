@@ -29,6 +29,9 @@ function searchByName(pageNum=1){
               </div>`
             });
             document.getElementById("pageNumber").innerHTML = `${pageNum}`
+            document.getElementById("card-sec").scrollIntoView({
+                behavior: "auto"
+              })
         } )
         .catch(err => console.error(err));
 }

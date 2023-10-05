@@ -23,6 +23,9 @@ function fetchPopular(page=1){
       if(page < 6){
         document.getElementById("pageNumber").innerHTML = `${page}`
       }
+      document.getElementById("displaySec").scrollIntoView({
+        behavior: "auto"
+      })
     })
     .catch(err => console.error(err));
 }
