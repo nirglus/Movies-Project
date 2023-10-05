@@ -42,14 +42,34 @@
             </ul>
         </div>
     </nav>
+    <div class="header-txt">
+      <h2>Hunting for movies with matching titles?</h2>
+      <input id="searchNameInput" type="text" placeholder="Insert movie name">
+      <button id="searchNameBtn">Search</button>
+    </div>
   </header>
-    <button id="clickLeft">Previous</button>
-    <input id="searchNameInput" type="text" placeholder="Insert movie name">
-    <button id="searchNameBtn">Search</button>
-    <button id="clickRight">Next</button>
+  <section class="d-flex justify-content-center align-items-center flex-column">
     <div class="container">
         <div class="row" id="movieNames"></div>
     </div>
+    <div class="leftRightBtns d-flex align-items-baseline">
+        <button class="btn btn-outline-success" id="clickLeft"><i class="bi bi-arrow-left"></i></button>
+        <h6 id="pageNumber"></h6>
+        <button class="btn btn-outline-success" id="clickRight"><i class="bi bi-arrow-right"></i></button>
+    </div>
+</section>
+  <!-- <section class="d-flex justify-content-center align-items-center flex-column"></section>
+    <input id="searchNameInput" type="text" placeholder="Insert movie name">
+    <button id="searchNameBtn">Search</button>
+    <div class="container">
+        <div class="row" id="movieNames"></div>
+    </div>
+    <div class="leftRightBtns d-flex align-items-baseline">
+      <button class="btn btn-outline-success" id="clickLeft"><i class="bi bi-arrow-left"></i></button>
+      <h6 id="pageNumber"></h6>
+      <button class="btn btn-outline-success" id="clickRight"><i class="bi bi-arrow-right"></i></button>
+  </div>
+</section> -->
     <footer class="text-center text-lg-start text-white" style="background-color: #253148">
         <!-- Grid container -->
          <div class="container p-4 pb-0">

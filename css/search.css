@@ -2,4 +2,30 @@ header{
     height: 100vh;
     background: url(../assets/images/cillian-murph.jpg) no-repeat center center fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.header-txt{
+    color: #fff;
+    align-self: center;
+    text-align: center;
+    margin-top: 43vh;
+}
+.header-txt h2{
+    margin-bottom: 5vh;
+}
+#searchNameBtn{
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    border: 2px solid #bc2c83;
+    background-color: #8a3e6c00;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+#searchNameBtn:hover{
+    background-color: #bc2c83;
+}
+#searchNameBtn:active{
+    transform: translateY(2px);
 }
