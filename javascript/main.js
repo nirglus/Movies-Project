@@ -23,19 +23,24 @@ function fetchPopular(page=1){
       if(page < 6){
         document.getElementById("pageNumber").innerHTML = `${page}`
       }
-      document.getElementById("displaySec").scrollIntoView({
-        behavior: "auto"
-      })
     })
     .catch(err => console.error(err));
 }
 fetchPopular();
+
+// Return to top function
+function returnToTop(){
+  document.getElementById("displaySec").scrollIntoView({
+    behavior: "auto"
+  })
+}
 // Next and Previous buttons
 let currentPage = 1;
 document.getElementById("clickRight").addEventListener("click", () =>{
   if(currentPage < 6){
     document.getElementById("popMovCard").innerHTML = '';
     fetchPopular(++currentPage);
+    returnToTop();
   }
 })
 document.getElementById("clickLeft").addEventListener("click", () =>{
