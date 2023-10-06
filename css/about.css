@@ -1,0 +1,22 @@
+header{
+    height: 100vh;
+    background: url(../assets/images/maf-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.header-txt{
+    color: #fff;
+    align-self: center;
+    text-align: center;
+    margin-top: 45vh;
+}
+.header-txt h1{
+    margin-bottom: 5vh;
+    text-shadow: 3px 2px 3px #000;
+}
+.logo{
+    font-size: unset;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #000 1px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 17px;
+    margin: 0 3px;
+}
