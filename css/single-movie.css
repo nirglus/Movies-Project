@@ -5,3 +5,47 @@ header{
     display: flex;
     flex-direction: column;
 }
+.header-txt{
+    color: #fff;
+    align-self: center;
+    text-align: center;
+    margin-top: 45vh;
+}
+.header-txt h2{
+    margin-bottom: 5vh;
+}
+#searchIdBtn{
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    border: 2px solid #bc2c83;
+    background-color: #8a3e6c00;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+#searchIdBtn:hover{
+    background-color: #bc2c83;
+}
+#searchIdBtn:active{
+    transform: translateY(2px);
+}
+#searchIdInput{
+    border: 0;
+    border-radius: 4px;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(255 255 255 / 46%);
+    margin-right: 1vw;
+    transition: border 0.3s;
+}
+#searchIdInput:hover{
+    border: 1px solid #bc2c83;
+}
+#searchIdInput:focus{
+    outline: none;
+    border: 1px solid #bc2c83;
+}
+::placeholder{
+    color: #000000;
+    padding-left: 10px;
+}
