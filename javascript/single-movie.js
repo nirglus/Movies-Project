@@ -12,17 +12,28 @@ function singleMovFetch(){
     fetch(`https://api.themoviedb.org/3/movie/${movID}?language=en-US`, options)
       .then(response => response.json())
       .then(data => {
-        console.log(data)
+        console.log(data);
         const singleMovie = document.getElementById("singleMov");
-        singleMovie.innerHTML = `<img src="https://image.tmdb.org/t/p/w500/${data.poster_path}">
-        <h1>${data.original_title}</h1>
-        <div class="mov-details">
-        <p><strong>Release Date:</strong> ${data.release_date}</p>
-        <p><strong>Genre:</strong> ${data.genres[0].name}, ${data.genres[1].name}</p>
-        <p id="mov-about"><strong>Description:</strong> ${data.overview}</p>
-        <p><strong>Actors:</strong> <span id="actorsSpan"></span></p>
+        singleMovie.innerHTML = `
+        <div class="card">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img class="card-img" src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="Movie Poster">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">${data.original_title}</h2>
+              <p class="card-text"><strong>Genre:</strong> ${data.genres[0].name}, ${data.genres[1].name}</p>
+              <p id="mov-about" class="card-text"><strong>Description:</strong> ${data.overview}</p>
+              <p class="card-text"><strong>Actors:</strong> <span id="actorsSpan"></span></p>
+              <p class="card-text"><small class="text-muted"><strong>Released on:</strong> ${data.release_date}</small></p>
+              <div class="text-right">
+                <button class="fav-btn btn btn-outline-danger" id="like-${movID}"><i class="bi bi-heart"></i> Add to favorites</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <button id="like-${movID}">Add to favorite</button>
+      </div>
         `;
       })
       .catch(err => console.error(err));
