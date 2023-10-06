@@ -63,3 +63,7 @@ input::-webkit-inner-spin-button {
     background-color: #222222;
     color: #fff;
 }
+strong {
+    color: #bc2c83;
+    margin-right: 3px;
+}
