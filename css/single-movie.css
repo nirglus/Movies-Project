@@ -22,6 +22,7 @@ header{
     border: 2px solid #bc2c83;
     background-color: #8a3e6c00;
     color: #fff;
+    text-shadow: 1px 1px 4px #000;
     transition: background-color 0.3s;
 }
 #searchIdBtn:hover{
