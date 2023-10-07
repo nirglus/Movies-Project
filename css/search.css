@@ -13,6 +13,7 @@ header{
 }
 .header-txt h2{
     margin-bottom: 5vh;
+    text-shadow: 3px 2px 3px #000;
 }
 #searchNameBtn{
     border-radius: 5px;
