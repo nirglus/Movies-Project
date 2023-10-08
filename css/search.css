@@ -37,7 +37,6 @@ header{
     height: 30px;
     background-color: rgb(255 255 255 / 46%);
     margin-right: 1vw;
-    transition: border 0.3s;
 }
 #searchNameInput:hover{
     border: 1px solid #bc2c83;

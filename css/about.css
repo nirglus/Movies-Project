@@ -47,3 +47,23 @@ main img{
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #000 1px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 17px;
     font-style: italic;
 }
+.contact-container{
+    padding: 2% 2%;
+}
+form, .contact-container{
+    display: flex;
+    flex-direction: column;
+    gap:2vh;
+    align-items: center;
+}
+.form-text{
+    width: 40vw;
+    height: 5vh;
+    border: 0;
+    border-radius: 4px;
+    background-color: rgb(255 255 255 / 46%);
+    margin-right: 1vw;
+}
+.t-area{
+    height:40vh;
+}
