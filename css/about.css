@@ -71,3 +71,10 @@ form, .contact-container{
     color: #000000;
     padding-left: 10px;
 }
+.form-text:hover{
+    border: 1px solid #bc2c83;
+}
+.form-text:focus{
+    outline: none;
+    border: 1px solid #bc2c83;
+}
