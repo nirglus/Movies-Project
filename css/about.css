@@ -78,3 +78,18 @@ form, .contact-container{
     outline: none;
     border: 1px solid #bc2c83;
 }
+.button{
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    border: 2px solid #bc2c83;
+    background-color: #8a3e6c00;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+.button:hover{
+    background-color: #bc2c83;
+}
+.button:active{
+    transform: translateY(2px);
+}
