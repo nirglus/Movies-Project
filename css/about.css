@@ -97,3 +97,15 @@ form, .contact-container{
     display: flex;
     gap: 1vw;
 }
+@media screen and (max-width: 600px) {
+    .form-text{
+        width: 90%;
+    } 
+    .button{
+        width: 20vw;
+    }
+    .contact-container p{
+        width: 56vw;
+        text-align: center;
+    }
+}
