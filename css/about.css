@@ -93,3 +93,7 @@ form, .contact-container{
 .button:active{
     transform: translateY(2px);
 }
+.btndiv{
+    display: flex;
+    gap: 1vw;
+}
