@@ -67,3 +67,7 @@ form, .contact-container{
 .t-area{
     height:40vh;
 }
+::placeholder{
+    color: #000000;
+    padding-left: 10px;
+}
