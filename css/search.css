@@ -49,13 +49,3 @@ header{
     color: #000000;
     padding-left: 10px;
 }
-.card-body{
-    background-color: rgba(0, 0, 0, 0.8);
-}
-#card-sec{
-    background-image: url(../assets/images/black-white-pattern.jpg);
-    background-color: #888484;
-    background-blend-mode: multiply;
-    background-size: cover;
-    color: #fff;
-}

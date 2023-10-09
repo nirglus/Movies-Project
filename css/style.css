@@ -42,5 +42,15 @@ section{
 .hidden{
     display: none !important;
 }
+.card-body{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.card-section{
+    background-image: url(../assets/images/black-white-pattern.jpg);
+    background-color: #888484;
+    background-blend-mode: multiply;
+    background-size: cover;
+    color: #fff;
+}
 
 
