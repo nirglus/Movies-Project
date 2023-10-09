@@ -43,7 +43,7 @@ main img{
     align-items: center;
     gap: 1vw;
 }
-.about-txt h1{
+h1{
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #000 1px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 17px;
     font-style: italic;
 }
@@ -98,6 +98,15 @@ form, .contact-container{
     gap: 1vw;
 }
 @media screen and (max-width: 600px) {
+    .about-container{
+        padding: 4% 4%;
+    }
+    .about-1,.about-2,.about-3{
+        flex-direction: column;
+    }
+    main img{
+        width:80%;
+    }
     .form-text{
         width: 90%;
     } 
@@ -108,4 +117,5 @@ form, .contact-container{
         width: 56vw;
         text-align: center;
     }
+    
 }

@@ -63,6 +63,10 @@ input::-webkit-inner-spin-button {
     background-color: #222222;
     color: #fff;
 }
+.card-title{
+    text-shadow: #FFF 0px 0px 5px, #000 1px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 17px;
+    font-style: italic;
+}
 strong {
     color: #bc2c83;
     margin-right: 3px;
