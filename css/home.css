@@ -14,3 +14,7 @@ header{
     left: 2vw;
     text-shadow: 4px 3px 0 #2d366a;
 }
+h5, section h2{
+    text-shadow: #FFF 0px 0px 5px, #000 1px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 17px;
+    font-style: italic;
+}
