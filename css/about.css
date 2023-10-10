@@ -15,7 +15,8 @@ header{
     margin-bottom: 5vh;
     text-shadow: 3px 2px 3px #000;
 }
-.logo{
+.header-title-logo{
+    font-family: 'Satisfy', cursive;
     font-size: unset;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #000 1px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 17px;
     margin: 0 3px;
