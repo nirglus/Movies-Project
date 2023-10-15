@@ -1,3 +1,9 @@
+// Import navbar and footer
+import getNav from "./modules/navbar.js";
+getNav();
+
+import getFooter from "./modules/footer.js";
+getFooter();
 // Single movie fetch
 function singleMovFetch(){
     const movID = document.getElementById("searchIdInput").value;
