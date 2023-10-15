@@ -26,8 +26,8 @@ function fetchPopular(page=1){
       const faveBtn = document.querySelectorAll(".fav-btn");
       for(let i = 0; i < faveBtn.length; i++){
         faveBtn[i].addEventListener("click", () => {
-          let movContent = document.getElementById(`mov-${i}`).innerHTML;
-          favorites.push(`<div class="movieCard">${movContent}</div>`);
+          let movContent = `<div class="col-md-3 mb-4">` + document.getElementById(`mov-${i}`).innerHTML;
+          favorites.push(`${movContent}`);
           localStorage.setItem("favorites", JSON.stringify(favorites));
         })
       }
