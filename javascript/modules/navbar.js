@@ -8,19 +8,19 @@ export default function getNav(){
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./html/about.html">About</a>
+                <a class="nav-link" href="../html/about.html">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./html/single-movie.html">Search by ID</a>
+                <a class="nav-link" href="../html/single-movie.html">Search by ID</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./html/search.html">Search by name</a>
+                <a class="nav-link" href="../html/search.html">Search by name</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./html/favorites.html">Favorites</a>
+                <a class="nav-link" href="../html/favorites.html">Favorites</a>
             </li>
         </ul>
     </div>`
