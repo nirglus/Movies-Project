@@ -1,3 +1,6 @@
+let favorites = []
+let storageValue = JSON.parse(localStorage.getItem("favorites"));
+
 // Popular movies fetch
 function fetchPopular(page=1){
   fetch(`https://api.themoviedb.org/3/movie/popular?language=en-US&page=${page}&api_key=38aa22b0b8ec6f9efab4ea43ec7c4adc`)
@@ -20,6 +23,14 @@ function fetchPopular(page=1){
         </div>
         </div>`
       });
+      const faveBtn = document.querySelectorAll(".fav-btn");
+      for(let i = 0; i < faveBtn.length; i++){
+        faveBtn[i].addEventListener("click", () => {
+          let movContent = document.getElementById(`mov-${i}`).innerHTML;
+          favorites.push(`<div class="movieCard">${movContent}</div>`);
+          localStorage.setItem("favorites", JSON.stringify(favorites));
+        })
+      }
       if(page < 6){
         document.getElementById("pageNumber").innerHTML = `${page}`
       }
