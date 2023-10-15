@@ -1,3 +1,4 @@
+let favorites = []
 // Search by name fetch
 function searchByName(pageNum=1){
     const movName = document.getElementById("searchNameInput").value;
@@ -28,6 +29,14 @@ function searchByName(pageNum=1){
               </div>
               </div>`
             });
+            const favBtn = document.querySelectorAll(".fav-btn");
+            for(let i = 0; i < favBtn.length; i++){
+              favBtn[i].addEventListener("click", () => {
+                let movContent = `<div class="col-md-3 mb-4">` + document.getElementById(`mov-${i}`).innerHTML;
+                favorites.push(`${movContent}`);
+                localStorage.setItem("favorites", JSON.stringify(favorites));
+              })
+            }
             document.getElementById("pageNumber").innerHTML = `${pageNum}`
             document.getElementById("card-sec").scrollIntoView({
                 behavior: "auto"
