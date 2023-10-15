@@ -3,6 +3,9 @@ let storageValue = JSON.parse(localStorage.getItem("favorites"));
 
 import getNav from "./modules/navbar.js";
 getNav();
+
+import getFooter from "./modules/footer.js";
+getFooter();
 // if (storageValue !== null) {
 //   favorites.push(storageValue);
 // }
