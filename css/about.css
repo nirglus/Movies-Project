@@ -6,14 +6,7 @@ header{
     flex-direction: column;
 }
 .header-txt{
-    color: #fff;
-    align-self: center;
-    text-align: center;
     margin-top: 45vh;
-}
-.header-txt h1{
-    margin-bottom: 5vh;
-    text-shadow: 3px 2px 3px #000;
 }
 .header-title-logo{
     font-family: 'Satisfy', cursive;
@@ -66,10 +59,6 @@ form, .contact-container{
 }
 .t-area{
     height:40vh;
-}
-::placeholder{
-    color: #000000;
-    padding-left: 10px;
 }
 .form-text:hover{
     border: 1px solid #bc2c83;

@@ -6,15 +6,8 @@ header{
     flex-direction: column;
 }
 .header-txt{
-    color: #fff;
-    align-self: center;
-    text-align: center;
     position: absolute;
     top: 47vh;
     left: 2vw;
     text-shadow: 3px 2px 3px #000;
-}
-h5{
-    text-shadow: #FFF 0px 0px 5px, #000 1px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 17px;
-    font-style: italic;
 }

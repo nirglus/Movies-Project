@@ -6,14 +6,7 @@ header{
     flex-direction: column;
 }
 .header-txt{
-    color: #fff;
-    align-self: center;
-    text-align: center;
     margin-top: 43vh;
-}
-.header-txt h2{
-    margin-bottom: 5vh;
-    text-shadow: 3px 2px 3px #000;
 }
 #searchNameBtn{
     border-radius: 5px;
@@ -29,27 +22,4 @@ header{
 }
 #searchNameBtn:active{
     transform: translateY(2px);
-}
-#searchNameInput{
-    border: 0;
-    border-radius: 4px;
-    width: 200px;
-    height: 30px;
-    background-color: rgb(255 255 255 / 46%);
-    margin-right: 1vw;
-}
-#searchNameInput:hover{
-    border: 1px solid #bc2c83;
-}
-#searchNameInput:focus{
-    outline: none;
-    border: 1px solid #bc2c83;
-}
-::placeholder{
-    color: #000000;
-    padding-left: 10px;
-}
-h5, section h2{
-    text-shadow: #FFF 0px 0px 5px, #000 1px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 17px;
-    font-style: italic;
 }

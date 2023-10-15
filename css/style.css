@@ -17,15 +17,40 @@ nav{
     font-size: 1.9em;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
+/* Header text */
+.header-txt{
+    color: #fff;
+    align-self: center;
+    text-align: center;
+}
+.header-txt h2{
+    margin-bottom: 5vh;
+    text-shadow: 3px 2px 3px #000;
+}
+/* Section */
 section{
     gap:2vh;
     padding: 3vh 0; 
+}
+h5, section h2{
+    text-shadow: #FFF 0px 0px 5px, #000 1px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 17px;
+    font-style: italic;
 }
 .selectDiv, .leftRightBtns{
     gap: 1vw;
 }
 .bi-star-fill{
     color: #ff9800;
+}
+.card-body{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.card-section{
+    background-image: url(../assets/images/black-white-pattern.jpg);
+    background-color: #888484;
+    background-blend-mode: multiply;
+    background-size: cover;
+    color: #fff;
 }
 .logo{
     font-family: 'Satisfy', cursive;
@@ -42,15 +67,25 @@ section{
 .hidden{
     display: none !important;
 }
-.card-body{
-    background-color: rgba(0, 0, 0, 0.8);
-}
-.card-section{
-    background-image: url(../assets/images/black-white-pattern.jpg);
-    background-color: #888484;
-    background-blend-mode: multiply;
-    background-size: cover;
-    color: #fff;
-}
 
-
+/* Inputs style */
+input{
+    border: 0;
+    border-radius: 4px;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(255 255 255 / 46%);
+    margin-right: 1vw;
+    transition: border 0.3s;
+}
+input:hover{
+    border: 1px solid #bc2c83;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #bc2c83;
+}
+::placeholder{
+    color: #000000;
+    padding-left: 10px;
+}
