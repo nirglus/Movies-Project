@@ -6,3 +6,7 @@ favStorage.forEach((element) => {
         favCard.innerHTML += element;
     }
 })
+document.querySelectorAll(".fav-btn").forEach((element) => {
+    element.classList.add("hidden");
+})
+
