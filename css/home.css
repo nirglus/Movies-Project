@@ -11,3 +11,15 @@ header{
     left: 2vw;
     text-shadow: 4px 3px 0 #2d366a;
 }
+select, option{
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(255 255 255 / 46%);
+    transition: 0.3s;
+}
+select:focus, select:hover{
+    outline: none;
+    background-color: rgba(255, 45, 149, 0.6);
+    color: #fff;
+    cursor: pointer;
+}

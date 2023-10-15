@@ -3,7 +3,7 @@ body{
 }
 nav{
     background-color: rgba(255, 255, 255, 0);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2) ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .navbar-dark .navbar-nav .nav-link{
     color: #fff;
@@ -52,6 +52,7 @@ h5, section h2{
     background-size: cover;
     color: #fff;
 }
+/* Footer */
 .logo{
     font-family: 'Satisfy', cursive;
     font-size: 1.5em;
@@ -64,12 +65,24 @@ h5, section h2{
     color: rgb(134, 176, 212) !important;
     text-decoration: none !important;
 }
-.hidden{
-    display: none !important;
+/* Button style */
+.button{
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    border: 2px solid #bc2c83;
+    background-color: #8a3e6c00;
+    color: #fff;
+    transition: background-color 0.3s;
 }
-
+.button:hover{
+    background-color: #bc2c83;
+}
+.button:active{
+    transform: translateY(2px);
+}
 /* Inputs style */
-input{
+input, .form-text{
     border: 0;
     border-radius: 4px;
     width: 200px;
@@ -78,14 +91,18 @@ input{
     margin-right: 1vw;
     transition: border 0.3s;
 }
-input:hover{
+input:hover, .form-text:hover{
     border: 1px solid #bc2c83;
 }
-input:focus{
+input:focus, .form-text:focus{
     outline: none;
     border: 1px solid #bc2c83;
 }
 ::placeholder{
     color: #000000;
     padding-left: 10px;
+}
+
+.hidden{
+    display: none !important;
 }
