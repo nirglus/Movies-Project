@@ -1,6 +1,7 @@
 let favorites = []
 let storageValue = JSON.parse(localStorage.getItem("favorites"));
 
+// Import navbar and footer
 import getNav from "./modules/navbar.js";
 getNav();
 
