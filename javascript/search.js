@@ -1,4 +1,10 @@
 let favorites = []
+// Import navbar and footer
+import getNav from "./modules/navbar.js";
+getNav();
+
+import getFooter from "./modules/footer.js";
+getFooter();
 // Search by name fetch
 function searchByName(pageNum=1){
     const movName = document.getElementById("searchNameInput").value;
