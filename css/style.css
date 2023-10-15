@@ -46,10 +46,7 @@ h5, section h2{
     background-color: rgba(0, 0, 0, 0.8);
 }
 .card-section{
-    background-image: url(../assets/images/black-white-pattern.jpg);
-    background-color: #888484;
-    background-blend-mode: multiply;
-    background-size: cover;
+    background-color: #010b16;
     color: #fff;
 }
 /* Footer */

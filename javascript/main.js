@@ -86,5 +86,3 @@ selectElement.addEventListener("change", function() {
     }
 });
 
-// Add to favorite
-
