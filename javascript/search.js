@@ -26,7 +26,7 @@ function searchByName(pageNum=1){
               <div class="col-md-3 mb-4">
               <div class="movieCard" id="mov-${index}">
               <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" class="card-img-top">
-              <div class="card-body d-flex flex-column">
+              <div class="card-body d-flex flex-column rounded-bottom">
               <h5 class="card-title">${element.original_title}</h5>
               <p class="card-text">Released on ${element.release_date}</p>
               <p class="card-text"><i class="bi bi-star-fill"></i> ${element.vote_average}</p>
