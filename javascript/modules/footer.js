@@ -43,7 +43,7 @@ export default function getFooter(){
                     <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
                     <!-- Facebook -->
                      <a
-                       class="btn btn-primary rounded-circle m-1"
+                       class="btn btn-primary m-1"
                        style="background-color: #3b5998"
                        href="#!"
                        role="button"
@@ -51,7 +51,7 @@ export default function getFooter(){
 
                      <!-- Twitter -->
                      <a
-                       class="btn btn-primary rounded-circle m-1"
+                       class="btn btn-primary m-1"
                        style="background-color: #55acee"
                        href="#!"
                        role="button"
@@ -59,7 +59,7 @@ export default function getFooter(){
 
                      <!-- Google -->
                      <a
-                       class="btn btn-primary rounded-circle m-1"
+                       class="btn btn-primary m-1"
                        style="background-color: #dd4b39"
                        href="#!"
                        role="button"
@@ -67,7 +67,7 @@ export default function getFooter(){
 
                      <!-- Instagram -->
                      <a
-                       class="btn btn-primary rounded-circle m-1"
+                       class="btn btn-primary m-1"
                        style="background-color: #ac2bac"
                        href="#!"
                        role="button"
@@ -75,14 +75,14 @@ export default function getFooter(){
 
                      <!-- Linkedin -->
                      <a
-                       class="btn btn-primary rounded-circle m-1"
+                       class="btn btn-primary m-1"
                        style="background-color: #0082ca"
                        href="#!"
                        role="button"
                        ><i class="bi bi-linkedin"></i></a>
                      <!-- Github -->
                      <a
-                       class="btn btn-primary rounded-circle m-1"
+                       class="btn btn-primary m-1"
                        style="background-color: #333333"
                        href="#!"
                        role="button"
