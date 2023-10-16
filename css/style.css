@@ -1,5 +1,13 @@
+@font-face {
+    font-family: mainFont;
+    src: url(../assets/fonts/Asap_Condensed/AsapCondensed-Medium.ttf);
+}
+@font-face {
+    font-family: logoFont;
+    src: url(../assets/fonts/Satisfy/Satisfy-Regular.ttf);
+}
 body{
-    font-family: 'Asap Condensed', sans-serif;
+    font-family: mainFont;
 }
 nav{
     background-color: rgba(255, 255, 255, 0);
@@ -13,7 +21,7 @@ nav{
     color: rgb(134, 176, 212);
 }
 .navbar-brand{
-    font-family: 'Satisfy', cursive;
+    font-family: logoFont;
     font-size: 1.9em;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
