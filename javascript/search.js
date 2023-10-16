@@ -64,10 +64,10 @@ document.getElementById("clickRight").addEventListener("click", () =>{
         document.getElementById("movieNames").innerHTML = '';
         searchByName(++currentPage);
     }
-})
+});
 document.getElementById("clickLeft").addEventListener("click", () =>{
     if(currentPage > 1){
         document.getElementById("movieNames").innerHTML = '';
         searchByName(--currentPage);
     }
-})
+});

@@ -137,7 +137,3 @@ input:focus, .form-text:focus{
     from{transform: translateY(100vh);}
     to{transform: translateY(0);}
 }
-@keyframes slideDown{
-    from{transform: translateY(-100vh);}
-    to{transform: translateY(0);}
-}
