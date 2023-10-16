@@ -30,6 +30,8 @@ nav{
     color: #fff;
     align-self: center;
     text-align: center;
+    transform: translateY(100vh);
+    animation: slideUp 0.5s ease-in-out forwards;
 }
 .header-txt h2{
     margin-bottom: 5vh;
@@ -111,4 +113,24 @@ input:focus, .form-text:focus{
 
 .hidden{
     display: none !important;
+}
+
+/* Animation Section */
+@keyframes slideinR{
+    0%{transform: translateX(-100vw);}
+    98%{transform: translateX(0.5vw);}
+    100%{transform: translateX(0);}
+}
+@keyframes slideinL{
+    0%{transform: translateX(100vw);}
+    98%{transform: translateX(-1vw);}
+    100%{transform: translateX(0);}
+}
+@keyframes slideUp{
+    from{transform: translateY(100vh);}
+    to{transform: translateY(0);}
+}
+@keyframes slideDown{
+    from{transform: translateY(-100vh);}
+    to{transform: translateY(0);}
 }
