@@ -38,7 +38,7 @@ function fetchPopular(page=1){
         favBtn[i].addEventListener("click", () => {
           let icon = document.getElementById(`heart-${i}`).classList;
           icon.remove("bi-heart");
-          icon.add("bi-heart-fill")
+          icon.add("bi-heart-fill");
           let movContent = `<div class="col-md-3 mb-4">` + document.getElementById(`mov-${i}`).innerHTML;
           favorites.push(`${movContent}`);
           localStorage.setItem("favorites", JSON.stringify(favorites));

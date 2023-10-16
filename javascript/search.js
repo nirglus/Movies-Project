@@ -30,7 +30,7 @@ function searchByName(pageNum=1){
               <h5 class="card-title">${element.original_title}</h5>
               <p class="card-text">Released on ${element.release_date}</p>
               <p class="card-text"><i class="bi bi-star-fill"></i> ${element.vote_average}</p>
-              <button class="fav-btn btn btn-outline-danger" id="like-${index}-${pageNum}"><i class="bi bi-heart"></i> Add to favorites</button>
+              <button class="fav-btn btn btn-outline-danger" id="like-${index}-${pageNum}"><i class="bi bi-heart" id="heart-${index}"></i> Add to favorites</button>
               </div>
               </div>
               </div>`
@@ -38,6 +38,9 @@ function searchByName(pageNum=1){
             const favBtn = document.querySelectorAll(".fav-btn");
             for(let i = 0; i < favBtn.length; i++){
               favBtn[i].addEventListener("click", () => {
+                let icon = document.getElementById(`heart-${i}`).classList;
+                icon.remove("bi-heart");
+                icon.add("bi-heart-fill");
                 let movContent = `<div class="col-md-3 mb-4">` + document.getElementById(`mov-${i}`).innerHTML;
                 favorites.push(`${movContent}`);
                 localStorage.setItem("favorites", JSON.stringify(favorites));
