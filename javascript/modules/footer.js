@@ -31,10 +31,10 @@ export default function getFooter(){
               <!-- Grid column -->
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                   <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                  <p><i class="fas fa-home mr-3"></i> Lod, 7145603, Israel</p>
-                  <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                  <p><i class="fas fa-phone mr-3"></i> + 972 54 9214212</p>
-                  <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                  <p><i class="bi bi-house-fill mr-3"></i> Lod, 7145603, Israel</p>
+                  <p><i class="bi bi-envelope-fill mr-3"></i> info@gmail.com</p>
+                  <p><i class="bi bi-telephone-fill mr-3"></i> + 972 54 9214212</p>
+                  <p><i class="bi bi-printer mr-3"></i> + 01 234 567 89</p>
                 </div>
                 <!-- Grid column -->
 
