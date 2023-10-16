@@ -8,6 +8,7 @@
 }
 body{
     font-family: mainFont;
+    overflow-x: hidden;
 }
 nav{
     background-color: rgba(255, 255, 255, 0);
@@ -26,6 +27,10 @@ nav{
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
     transform: translateX(-100vw);
     animation: slideinR 0.5s ease-in-out forwards;
+}
+nav ul{
+    transform: translateX(100vw);
+    animation: slideinL 0.5s ease-in-out forwards;
 }
 /* Header text */
 .header-txt{
