@@ -24,6 +24,8 @@ nav{
     font-family: logoFont;
     font-size: 1.9em;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    transform: translateX(-100vw);
+    animation: slideinR 0.5s ease-in-out forwards;
 }
 /* Header text */
 .header-txt{
@@ -31,7 +33,7 @@ nav{
     align-self: center;
     text-align: center;
     transform: translateY(100vh);
-    animation: slideUp 0.5s ease-in-out forwards;
+    animation: slideUp 1s ease-in-out forwards;
 }
 .header-txt h2{
     margin-bottom: 5vh;
