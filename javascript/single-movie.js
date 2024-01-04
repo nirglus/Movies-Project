@@ -1,9 +1,9 @@
 // Import navbar and footer
 import getNav from "./modules/navbar.js";
-getNav();
-
 import getFooter from "./modules/footer.js";
+getNav();
 getFooter();
+
 // Single movie fetch
 function singleMovFetch(){
     const movID = document.getElementById("searchIdInput").value;
@@ -32,7 +32,7 @@ function singleMovFetch(){
               <p class="card-text"><strong>Genre: </strong>${data.genres[0].name}, ${data.genres[1].name}</p>
               <p id="mov-about"><strong>Description: </strong>${data.overview}</p>
               <p class="card-text"><strong>Actors: </strong><span id="actorsSpan"></span></p>
-              <p class="card-text"><small class="text-muted"><b>Released on: </b>${data.release_date}</small></p>
+              <p class="card-text"><small class="text-muted"><b>Released on: </b>${data.release_date.split('-').reverse().join('/')}</small></p>
               <div class="text-right">
                 <button class="fav-btn btn btn-outline-danger" id="like-${movID}"><i class="bi bi-heart"></i> Add to favorites</button>
               </div>

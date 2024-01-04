@@ -1,8 +1,7 @@
 // Import navbar and footer
 import getNav from "./modules/navbar.js";
-getNav();
-
 import getFooter from "./modules/footer.js";
+getNav();
 getFooter();
 
 // Display favorites

@@ -1,11 +1,13 @@
-let storageValue = localStorage.getItem("favorites");
-let favorites = JSON.parse(storageValue)|| [];
 // Import navbar and footer
 import getNav from "./modules/navbar.js";
-getNav();
-
 import getFooter from "./modules/footer.js";
+getNav();
 getFooter();
+
+// Favourites storage
+let storageValue = localStorage.getItem("favorites");
+let favorites = JSON.parse(storageValue)|| [];
+
 // Search by name fetch
 function searchByName(pageNum=1){
     const movName = document.getElementById("searchNameInput").value;
@@ -29,7 +31,7 @@ function searchByName(pageNum=1){
               <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" class="card-img-top">
               <div class="card-body d-flex flex-column rounded-bottom">
               <h5 class="card-title">${element.original_title}</h5>
-              <p class="card-text">Released on ${element.release_date}</p>
+              <p class="card-text">Released on ${element.release_date.split('-').reverse().join('/')}</p>
               <p class="card-text"><i class="bi bi-star-fill"></i> ${element.vote_average}</p>
               <button class="fav-btn btn btn-outline-danger" id="like-${index}-${pageNum}"><i class="bi bi-heart" id="heart-${index}"></i> Add to favorites</button>
               </div>
