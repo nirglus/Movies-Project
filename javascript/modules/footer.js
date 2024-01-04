@@ -1,5 +1,5 @@
 export default function getFooter(){
-    const footer = document.querySelector("footer")
+    const footer = document.querySelector("footer");
     footer.innerHTML += `
     <!-- Grid container -->
     <div class="container p-4 pb-0">
@@ -93,5 +93,5 @@ export default function getFooter(){
        </section>
 </div>
 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); word-spacing: 1ch;">
-<i class="bi bi-camera-reels"></i> MovieNatic © 2023</div>`
+<i class="bi bi-camera-reels"></i> MovieNatic © ${new Date().getFullYear()}</div>`
 }
