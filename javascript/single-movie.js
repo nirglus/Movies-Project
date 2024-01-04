@@ -30,6 +30,7 @@ function singleMovFetch(){
             <div class="card-body">
               <h2 class="card-title">${data.original_title}</h2>
               <p class="card-text"><strong>Genre: </strong>${data.genres[0].name}, ${data.genres[1].name}</p>
+              <p id="mov-about"><strong>Rating: </strong>${data.vote_average.toFixed(1)}</p>
               <p id="mov-about"><strong>Description: </strong>${data.overview}</p>
               <p class="card-text"><strong>Actors: </strong><span id="actorsSpan"></span></p>
               <p class="card-text"><small class="text-muted"><b>Released on: </b>${data.release_date.split('-').reverse().join('/')}</small></p>
