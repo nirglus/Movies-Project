@@ -1,5 +1,5 @@
-let favorites = []
-let storageValue = JSON.parse(localStorage.getItem("favorites"));
+let storageValue = localStorage.getItem("favorites");
+let favorites = JSON.parse(storageValue)|| [];
 
 // Import navbar and footer
 import getNav from "./modules/navbar.js";
