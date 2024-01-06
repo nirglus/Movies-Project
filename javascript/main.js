@@ -73,7 +73,7 @@ document.getElementById("clickLeft").addEventListener("click", () =>{
 })
 // Day or Week select
 const selectElement = document.getElementById("weekOrDay");
-selectElement.addEventListener("change", function() {
+selectElement.addEventListener("change", () => {
     const selectedValue = selectElement.value;
     if (selectedValue == "week"){
       document.getElementById("popMovCard").innerHTML = '';
