@@ -37,6 +37,7 @@ function searchByName(pageNum=1){
       fetch(`https://api.themoviedb.org/3/search/movie?query=${movName}&include_adult=false&language=en-US&page=${pageNum}`, options)
         .then(response => response.json())
         .then(data => {
+            console.log(data);
             const movieNames = document.getElementById("movieNames");
             const moviesArr = data.results;
             moviesArr.forEach((element, index) => {
@@ -54,17 +55,6 @@ function searchByName(pageNum=1){
               </div>`
             });
             favouriteHandler();
-            // const favBtn = document.querySelectorAll(".fav-btn");
-            // for(let i = 0; i < favBtn.length; i++){
-            //   favBtn[i].addEventListener("click", () => {
-            //     let icon = document.getElementById(`heart-${i}`).classList;
-            //     icon.remove("bi-heart");
-            //     icon.add("bi-heart-fill");
-            //     let movContent = `<div class="col-md-3 mb-4">` + document.getElementById(`mov-${i}`).innerHTML;
-            //     favorites.push(`${movContent}`);
-            //     localStorage.setItem("favorites", JSON.stringify(favorites));
-            //   })
-            // }
             document.getElementById("pageNumber").innerHTML = `${pageNum}`
             document.getElementById("card-sec").scrollIntoView({
                 behavior: "auto"
