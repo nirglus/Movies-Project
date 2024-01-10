@@ -17,9 +17,10 @@ nav{
 .navbar-dark .navbar-nav .nav-link{
     color: #fff;
     text-transform: uppercase;
+    transition: 0.3s;
 }
 .navbar-dark .navbar-nav .nav-link:hover{
-    color: rgb(134, 176, 212);
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
 .navbar-brand{
     font-family: logoFont;
