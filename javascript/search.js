@@ -5,8 +5,7 @@ getNav();
 getFooter();
 
 // Favourites storage
-let storageValue = localStorage.getItem("favorites");
-let favorites = JSON.parse(storageValue)|| [];
+let favorites = JSON.parse(localStorage.getItem("favorites"))|| [];
 
 // Favourite handler
 function favouriteHandler(){
