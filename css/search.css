@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    background: url(../assets/images/cillian-murph.jpg) no-repeat center center fixed;
+    background: url(../assets/images/cillian-murph.jpg) no-repeat center center fixed #010b16;
     background-size: cover;
     display: flex;
     flex-direction: column;
