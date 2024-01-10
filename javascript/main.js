@@ -37,7 +37,7 @@ function fetchPopular(page=1){
         <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" class="card-img-top">
         <div class="card-body d-flex flex-column rounded-bottom">
         <h5 class="card-title">${element.original_title}</h5>
-        <p class="card-text">Released on ${element.release_date.split('-').reverse().join('/')}</p>
+        <p class="card-text"><small class="text-muted"><b>Released on: </b>${element.release_date.split('-').reverse().join('/')}</small></p>
         <p class="card-text"><i class="bi bi-star-fill"></i> ${element.vote_average.toFixed(1)}</p>
         <button class="fav-btn btn btn-outline-danger" id="like-${index}-${page}"><i id="heart-${index}" class="bi bi-heart"></i> Add to favorites</button>
         </div>
