@@ -55,9 +55,7 @@ function searchByName(pageNum=1){
             });
             favouriteHandler();
             document.getElementById("pageNumber").innerHTML = `${pageNum}`
-            document.getElementById("card-sec").scrollIntoView({
-                behavior: "auto"
-              })
+            document.getElementById("card-sec").scrollIntoView(true);
         } )
         .catch(err => console.error(err));
 }

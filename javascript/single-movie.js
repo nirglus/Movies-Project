@@ -56,10 +56,17 @@ function singleMovFetch(){
             if (index < ACTORS_ARR.length - 1) {
                 actorNames += ", ";
             }
+          })
+          actorSpan.innerHTML += actorNames;
+          goToDisplay();
         })
-        actorSpan.innerHTML += actorNames;
-      })
-      .catch(error => console.error(error));
+        .catch(error => console.error(error));
     }
 
-document.getElementById("searchIdBtn").addEventListener("click",singleMovFetch)
+// Move down
+function goToDisplay(){
+   document.getElementById("singleMov").scrollIntoView(true);
+}
+document.getElementById("searchIdBtn").addEventListener("click",() =>{
+  singleMovFetch();
+});

@@ -55,9 +55,7 @@ fetchPopular();
 
 // Return to top function
 function returnToTop(){
-  document.getElementById("displaySec").scrollIntoView({
-    behavior: "auto"
-  })
+  document.getElementById("displaySec").scrollIntoView(true)
 }
 // Next and Previous buttons
 let currentPage = 1;
