@@ -16,6 +16,21 @@ if(favStorage){
     document.querySelector("section").classList.add("hidden");
 }
 document.querySelectorAll(".fav-btn").forEach((element) => {
-    element.classList.add("hidden");
+    element.innerHTML = `Remove`;
+    element.addEventListener("click", handleRemove);
 })
+
+function handleRemove(event){
+    const favMovieCard = event.target.closest(".col-md-3");
+    if (favMovieCard) {
+        const indexToRemove = favMovieCard.dataset.index;
+        favMovieCard.remove();
+        favStorage.splice(indexToRemove, 1);
+        localStorage.setItem("favorites", JSON.stringify(favStorage));
+        if(favStorage.length == 0){
+            document.querySelector("section").classList.add("hidden");
+        }
+    }
+
+}
 
