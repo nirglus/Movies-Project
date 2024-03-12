@@ -5,8 +5,8 @@ getNav();
 getFooter();
 
 // Single movie fetch
-function singleMovFetch(){
-    const movID = document.getElementById("searchIdInput").value;
+function singleMovFetch(mainID){
+    const movID = mainID || document.getElementById("searchIdInput").value;
     const options = {
       method: 'GET',
       headers: {
@@ -70,3 +70,10 @@ function goToDisplay(){
 document.getElementById("searchIdBtn").addEventListener("click",() =>{
   singleMovFetch();
 });
+
+const urlParams = new URLSearchParams(window.location.search);
+const movID = urlParams.get('id');
+if(movID){
+  singleMovFetch(movID);
+  movID = undefined;
+}
