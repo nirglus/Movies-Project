@@ -45,7 +45,7 @@ function searchByName(pageNum=1){
               <div class="movieCard" id="mov-${index}">
               <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" class="card-img-top">
               <div class="card-body d-flex flex-column rounded-bottom">
-              <h5 class="card-title">${element.original_title}</h5>
+              <h5 class="card-title"><a href="../html/single-movie.html?id=${element.id}">${element.original_title}</a></h5>
               <p class="card-text"><small class="text-muted"><b>Released on: </b>${element.release_date.split('-').reverse().join('/')}</small></p>
               <p class="card-text"><i class="bi bi-star-fill"></i> ${element.vote_average.toFixed(1)}</p>
               <button class="fav-btn btn btn-outline-danger" id="like-${index}-${pageNum}"><i class="bi bi-heart" id="heart-${index}"></i> Add to favorites</button>
