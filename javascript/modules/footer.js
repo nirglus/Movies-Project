@@ -19,9 +19,9 @@ export default function getFooter(){
               <!-- Grid column -->
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                  <h6 class="text-uppercase mb-4 font-weight-bold">Projects</h6>
-                 <p><a class="text-white p-link" href="https://nirglus.github.io/Marvel-Wikipedia/">Marvel Wiki</a></p>
-                 <p><a class="text-white p-link" href="https://nirglus.github.io/Hotel-Site-Design/">A Hotel</a></p>
-                 <p><a class="text-white p-link" href="https://nirglus.github.io/myProject/">Nir's Portfolio</a></p>
+                 <p><a class="text-white p-link" href="https://resumematrix-50ace.web.app/">ResumeMatrix</a></p>
+                 <p><a class="text-white p-link" href="https://world-of-formula.web.app/">World of Formula</a></p>
+                 <p><a class="text-white p-link" href="https://nirglus.github.io/advice-generator-app-main/">Advice Generator</a></p>
                  <p><a class="text-white p-link" href="https://nirglus.github.io/age-calculator-app-main/">Age Calculator</a></p>
               </div>
               <!-- Grid column -->
@@ -31,9 +31,9 @@ export default function getFooter(){
               <!-- Grid column -->
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                   <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                  <p><i class="bi bi-house-fill mr-3"></i> Lod, 7145603, Israel</p>
+                  <p><i class="bi bi-house-fill mr-3"></i> 23rd Ave, Ipsum</p>
                   <p><i class="bi bi-envelope-fill mr-3"></i> info@gmail.com</p>
-                  <p><i class="bi bi-telephone-fill mr-3"></i> + 972 54 9214212</p>
+                  <p><i class="bi bi-telephone-fill mr-3"></i> + 972 55 1234567</p>
                   <p><i class="bi bi-printer mr-3"></i> + 01 234 567 89</p>
                 </div>
                 <!-- Grid column -->
