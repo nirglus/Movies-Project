@@ -71,6 +71,7 @@ h5, section h2{
 }
 .card-body{
     background-color: rgba(0, 0, 0, 0.8);
+    min-height: 44vh;
 }
 .card-section{
     background-color: #010b16;
