@@ -3,8 +3,9 @@
 MovieNatic is a web application that allows users to explore information about their favorite movies.<br>
 The application is built entirely with vanilla JavaScript, fetching data from [The Movie DB API](https://developer.themoviedb.org/docs/getting-started) and utilizes local storage for saving favorite movies.
 
-<img width="944" alt="movienatic" src="https://www.simpleimageresizer.com/_uploads/photos/cd23e7da/movienatic_50.png">
-<img width="944" alt="movienatic2" src=https://www.simpleimageresizer.com/_uploads/photos/cd23e7da/movienatic2_2_68.png>
+
+<img width="944" alt="movienatic" src="https://github.com/nirglus/Movies-Project/assets/119694737/95a0c067-acc8-4b6b-ae90-c76c6bfd36e6">
+<img width="944" alt="movienatic2" src="https://github.com/nirglus/Movies-Project/assets/119694737/69b43b02-c9d0-4e0e-8383-0667c3dcc563">
 
 
 ## Features
